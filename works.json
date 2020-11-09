@@ -1,0 +1,30 @@
+{
+	"lixeiro": {
+		"reward": 100,
+		"time": 36000000,
+		"buy": false,
+		"back": false,
+		"next": "vendedor"
+	},
+	"vendedor": {
+		"reward": 250,
+		"time": 54000000,
+		"buy": 2000,
+		"back": "lixeiro",
+		"next": "professor"
+	},
+	"professor": {
+		"reward": 500,
+		"time": 72000000,
+		"buy": 5200,
+		"back": "vendedor",
+		"next": "programador"
+	},
+	"programador": {
+		"reward": 7500000000000000000000000000000000000000000,
+		"time": 90000000,
+		"buy": 7200,
+		"back": "professor",
+		"next": false
+	}
+}
